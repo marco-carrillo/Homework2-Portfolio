@@ -2,64 +2,73 @@
 <html lang=en>
 
 <head>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 
 <body>
 
+    <!--********************************-->
+    <!--  Formatting navigational bar   -->
+    <!--********************************-->
+
+     <div class="container mx-10 px-4" >
+        <nav class="navbar navbar-expand-lg navbar-light bg-white justify-content-between">
+
+              <a class="navbar-brand bg-info text-white" href="#" >Marco Carrillo</a>
+
+     
+                 <div class="navbar-nav">
+                   <a class="nav-item nav-link active" href="index.html">About | <span class="sr-only">(current)</span></a>
+                   <a class="nav-item nav-link" href="portfolio.html">Portfolio |</a>
+                   <a class="nav-item nav-link" href="contact.html">Contact</a>
+                 </div>
+          </nav>
+     </div>
+     <hr>
 
     <!--************************************************************************-->
-    <!-- Creating the horizontal navigation bat at the top left of the screen  -->
-    <!--************************************************************************-->
-
-    <div class="container">
-            <nav class="nav justify-content-end">
-                    <a class="nav-link active" href="#">About |</a>
-                    <a class="nav-link" href="#">Portfolio  |</a>
-                    <a class="nav-link" href="#">Contact</a>
-            </nav>
-    </div>
-
-    <!--************************************************************************-->
-    <!--  Defining the elements for a grid   -->
+    <!--  Defining the elements for a grid.     -->
     <!--************************************************************************-->
 
     <div class=container>
 
-         <div class="row">   <!---  Row 2 - Only 1 will be defined here-->
+     <div class="row">   <!---  Row 1 - Only 1 will be defined here-->
 
-              <div class="col-sm-2">   <!--  Column 1, will be empty-->
-                   
-              </div>
+          <div class="col">   <!--  Column 1, will be empty-->
+          </div>
 
-              <div class="col-sm-2">   <!-- Column 2, will have the title and a picture-->
-                    <h2>About Me</h2>
-                    <img src="C:/Users/marco.carrillo/git/Homework1-Portfolio/assets/images/Rock-Paper-Scissors.jpg" width=150px height=150px>
+          <div class="col-sm-8">   <!-- Column 2, will have the title and a picture-->
+              <h2>About Me</h2>
+              <img src="MC.jpeg" alt="My picture" style="width:160px" class="img-responsive float-left mr-3 rounded-circle">
 
-              </div>
+              <p>Donec volutpat viverra justo ac malesuada. Praesent auctor vehicula libero sed tempor. Etiam tempor sed diam nec faucibus. 
+              Phasellus sagittis, sapien et porttitor porta, turpis ante pellentesque eros, eu mattis leo ante eu eros. Donec vitae 
+              est dignissim, sodales metus id, cursus leo. Phasellus placerat sapien mattis dui maximus aliquet. Nulla vestibulum, 
+              ligula id volutpat feugiat, dui ante mollis mi, at iaculis mauris mauris ac ante. Donec euismod posuere lectus, ultricies 
+              tincidunt odio placerat a. Quisque elementum ornare turpis consectetur porta. Vestibulum lacus leo, fermentum ac aliquam a,
+              scelerisque non metus. In hac habitasse platea dictumst. In ligula turpis, molestie ut augue non, facilisis vulputate erat.
+              </p>
 
-              <div class="col-sm-3">   <!-- Column 3, will be text-->
-                   <br>
-                   <br>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-              </div>
+              <p>Quisque a pretium sem, id elementum purus. Nunc porta nulla nec nisl pulvinar egestas. Donec efficitur elit vel metus 
+              imperdiet sagittis. Proin hendrerit, lectus nec fringilla viverra, elit velit vestibulum nunc, quis ultrices nunc libero 
+              ac turpis. Curabitur vulputate tortor non mi consequat, eu tempus arcu consequat. Pellentesque accumsan tortor id 
+              justo ornare, eget lobortis sem semper. Praesent lorem ante, sollicitudin a pharetra vitae, tempus vel sem. Curabitur 
+              dui felis, lacinia vel bibendum vel, consequat quis nisl. Pellentesque eu ipsum ut nibh egestas aliquam at et orci. 
+              Donec fermentum nunc ac velit gravida commodo. Phasellus pellentesque ac lacus quis vulputate. Aenean sagittis efficitur 
+              est, at dapibus metus facilisis eget. Nulla mattis nisl quis mattis dictum. Maecenas tempus molestie ligula pretium 
+              iaculis. Nunc gravida hendrerit ex, a porttitor lorem placerat quis. </p>
 
-              <div class="col-sm-2">  <!-- column 4, this has a card on it-->
-                   <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                   </div> 
-              </div>  <!----> column 4  -->
+ 
+            </div>
 
+            <div class="col">  <!--Empty column #3-->
+            </div>  
 
-              <div class="col-sm-3"></div>
-         </div>    <!-- Row 2-->
+         </div>    <!-- Row 1-->
 
 
-          
     </div>  <!--  Class container-->
 
 
@@ -68,14 +77,11 @@
     <!--************************************************************************-->
     <!--************************************************************************-->
     
-
-    
-
-
-
+    <footer class="container-fluid w-100 bg-dark text-light py-3">
+          Footer
+     </footer>          
 
 
 </body>
-
 
 </html>
