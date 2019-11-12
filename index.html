@@ -2,45 +2,59 @@
 <html lang=en>
 
 <head>
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
 
 <body>
+
 
     <!--********************************-->
     <!--  Formatting navigational bar   -->
     <!--********************************-->
+    
+    <div class="container">
+         <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
 
-     <div class="container mx-10 px-4" >
-        <nav class="navbar navbar-expand-lg navbar-light bg-white justify-content-between">
+              <!--Navbar brand, my name included here-->
+              <div class="navbar-header h1">
+                   <a class="navbar-brand bg-info text-white" href="#" >Marco Carrillo</a>
+              </div>
 
-              <a class="navbar-brand bg-info text-white" href="#" >Marco Carrillo</a>
 
-     
-                 <div class="navbar-nav">
-                   <a class="nav-item nav-link active" href="index.html">About | <span class="sr-only">(current)</span></a>
-                   <a class="nav-item nav-link" href="portfolio.html">Portfolio |</a>
-                   <a class="nav-item nav-link" href="contact.html">Contact</a>
-                 </div>
-          </nav>
+              <!--Toggle button, handles mobile screens-->
+              <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#MyMenuHwrk2" aria-controls="MyMenuHwrk2" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse ml-auto" id="MyMenuHwrk2">
+
+                   <!-- Navbar menu-->
+                   <ul class="nav navbar-nav ml-auto">
+                       <li class="nav-item"><a href="index.html" class="nav-link Active border-right">About<span class="sr-only">(current)</span></a></li>
+                       <li class="nav-item"><a href="portfolio.html" class="nav-link border-right">Portfolio</a></li>
+                       <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                   </ul>
+
+              </div>  <!--Navbar collapse-->
+          </nav>  <!-- Overall nav element-->
+          <hr>
      </div>
-     <hr>
 
-    <!--************************************************************************-->
-    <!--  Defining the elements for a grid.     -->
-    <!--************************************************************************-->
+     <!--************************************************************************************************-->
+    <!--  Defining the elements for a grid.  Only 1 row required, 3 columns, both at the end empty      -->
+    <!--************************************************************************************************-->
 
-    <div class=container>
-
+ <div class="container" style="background-image: url(background.png);">   
+    <div class="container">
      <div class="row">   <!---  Row 1 - Only 1 will be defined here-->
 
           <div class="col">   <!--  Column 1, will be empty-->
           </div>
 
-          <div class="col-sm-8">   <!-- Column 2, will have the title and a picture-->
-              <h2>About Me</h2>
+          <div class="col-sm-10">   <!-- Column 2, will have the title and a picture-->
+              <h2 class="text-info">About Me</h2><hr>
               <img src="MC.jpeg" alt="My picture" style="width:160px" class="img-responsive float-left mr-3 rounded-circle">
 
               <p>Donec volutpat viverra justo ac malesuada. Praesent auctor vehicula libero sed tempor. Etiam tempor sed diam nec faucibus. 
@@ -53,35 +67,41 @@
 
               <p>Quisque a pretium sem, id elementum purus. Nunc porta nulla nec nisl pulvinar egestas. Donec efficitur elit vel metus 
               imperdiet sagittis. Proin hendrerit, lectus nec fringilla viverra, elit velit vestibulum nunc, quis ultrices nunc libero 
-              ac turpis. Curabitur vulputate tortor non mi consequat, eu tempus arcu consequat. Pellentesque accumsan tortor id 
+              ac turpis. Curabitur vulputate tortor non mi consequat, eu tempus arcu consequat. </p>
+              
+              <p>Pellentesque accumsan tortor id 
               justo ornare, eget lobortis sem semper. Praesent lorem ante, sollicitudin a pharetra vitae, tempus vel sem. Curabitur 
               dui felis, lacinia vel bibendum vel, consequat quis nisl. Pellentesque eu ipsum ut nibh egestas aliquam at et orci. 
               Donec fermentum nunc ac velit gravida commodo. Phasellus pellentesque ac lacus quis vulputate. Aenean sagittis efficitur 
               est, at dapibus metus facilisis eget. Nulla mattis nisl quis mattis dictum. Maecenas tempus molestie ligula pretium 
               iaculis. Nunc gravida hendrerit ex, a porttitor lorem placerat quis. </p>
 
- 
-            </div>
+          </div>
 
-            <div class="col">  <!--Empty column #3-->
-            </div>  
+          <div class="col">  <!--Empty column #3.  No size to force middle column to center-->
+          </div>  
 
          </div>    <!-- Row 1-->
-
-
     </div>  <!--  Class container-->
 
-
-   
-
+</div>
     <!--************************************************************************-->
+    <!-- Formating the footer.  Will make it 'fixed', similar to sticky in CSS  -->
     <!--************************************************************************-->
     
-    <footer class="container-fluid w-100 bg-dark text-light py-3">
-          Footer
-     </footer>          
+    <footer class="fixed-bottom bg-info text-light d-flex justify-content-center">
+          <p>Copyright (c) - Marco Carrillo</p>
+     </footer>
+     
+     
+    <!--******************************************************-->
+    <!-- Downloading JQuery to enable menu responsive design  -->
+    <!--******************************************************-->
 
-
+     
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
