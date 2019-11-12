@@ -2,33 +2,33 @@
 <html lang=en>
 
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    </head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-<body>
-
+<body style="background-image: url(assets/images/background.png);">
 
     <!--********************************-->
     <!--  Formatting navigational bar   -->
     <!--********************************-->
     
-    <div class="container">
-         <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">  <!--To wrap the navigational bar around-->
+         <nav class="navbar navbar-expand-md navbar-light bg-white">    <!-- expands when it is a middle-sized monitor-->
 
               <!--Navbar brand, my name included here-->
               <div class="navbar-header h1">
-                   <a class="navbar-brand bg-info text-white" href="#" >Marco Carrillo</a>
-              </div>
+                   <a class="navbar-brand bg-info text-white" id="myname" href="#" >Marco Carrillo</a>
 
+               </div>
 
               <!--Toggle button, handles mobile screens-->
               <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#MyMenuHwrk2" aria-controls="MyMenuHwrk2" aria-expanded="false" aria-label="Toggle navigation">
                    <span class="navbar-toggler-icon"></span>
               </button>
               
-              <div class="collapse navbar-collapse ml-auto" id="MyMenuHwrk2">
+               <div class="collapse navbar-collapse ml-auto" id="MyMenuHwrk2">
 
                    <!-- Navbar menu-->
                    <ul class="nav navbar-nav ml-auto">
@@ -40,14 +40,14 @@
               </div>  <!--Navbar collapse-->
           </nav>  <!-- Overall nav element-->
           <hr>
-     </div>
+     </div>  <!-- Wrapper to the navigational bar-->
 
      <!--************************************************************************************************-->
     <!--  Defining the elements for a grid.  Only 1 row required, 3 columns, both at the end empty      -->
     <!--************************************************************************************************-->
 
- <div class="container" style="background-image: url(background.png);">   
-    <div class="container">
+ <div class="container">   
+    <div class="container bg-white">
      <div class="row">   <!---  Row 1 - Only 1 will be defined here-->
 
           <div class="col">   <!--  Column 1, will be empty-->
@@ -55,7 +55,7 @@
 
           <div class="col-sm-10">   <!-- Column 2, will have the title and a picture-->
               <h2 class="text-info">About Me</h2><hr>
-              <img src="MC.jpeg" alt="My picture" style="width:160px" class="img-responsive float-left mr-3 rounded-circle">
+              <img src="assets/images/MC.jpeg" alt="My picture" style="width:160px" class="img-responsive float-left mr-3 rounded-circle">
 
               <p>Donec volutpat viverra justo ac malesuada. Praesent auctor vehicula libero sed tempor. Etiam tempor sed diam nec faucibus. 
               Phasellus sagittis, sapien et porttitor porta, turpis ante pellentesque eros, eu mattis leo ante eu eros. Donec vitae 

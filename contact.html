@@ -2,44 +2,100 @@
 <html lang=en>
 
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
-
+<body style="background-image: url(assets/images/background.png);">
 
     <!--********************************-->
     <!--  Formatting navigational bar   -->
     <!--********************************-->
-    <nav class="navbar navbar-expand-md navbar-light bg-white">
+    
+    <div class="container">  <!--To wrap the navigational bar around-->
+         <nav class="navbar navbar-expand-md navbar-light bg-white">    <!-- expands when it is a middle-sized monitor-->
 
               <!--Navbar brand, my name included here-->
-              <a class="navbar-brand bg-info text-white" href="#" >Marco Carrillo</a>
+              <div class="navbar-header h1">
+                   <a class="navbar-brand bg-info text-white" id="myname" href="#" >Marco Carrillo</a>
+
+               </div>
 
               <!--Toggle button, handles mobile screens-->
               <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#MyMenuHwrk2" aria-controls="MyMenuHwrk2" aria-expanded="false" aria-label="Toggle navigation">
                    <span class="navbar-toggler-icon"></span>
               </button>
               
-              <div class="collapse navbar-collapse ml-auto" id="MyMenuHwrk2">
+               <div class="collapse navbar-collapse ml-auto" id="MyMenuHwrk2">
 
                    <!-- Navbar menu-->
                    <ul class="nav navbar-nav ml-auto">
-                       <li class="nav-item"><a href="index.html" class="nav-link Active">About |<span class="sr-only">(current)</span></a></li>
-                       <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio |</a></li>
+                       <li class="nav-item"><a href="index.html" class="nav-link Active border-right">About<span class="sr-only">(current)</span></a></li>
+                       <li class="nav-item"><a href="portfolio.html" class="nav-link border-right">Portfolio</a></li>
                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                    </ul>
 
               </div>  <!--Navbar collapse-->
-     </nav>  <!-- Overall nav element-->
-     <hr>
-     </div>
+          </nav>  <!-- Overall nav element-->
+          <hr>
+     </div>  <!-- Wrapper to the navigational bar-->
 
      <!--************************************************************************************************-->
     <!--  Defining the elements for a grid.  Only 1 row required, 3 columns, both at the end empty      -->
     <!--************************************************************************************************-->
 
-    <!--************************************************************************-->
+    <div id="contactformwrapper" class="container bg-white">  <!--To wrap the contact form around-->
+
+          <form>  <!--Start of the input form-->
+
+               <div class="container text-info">  <!-- divider contains the -->
+                    <h2 class="text-info">Contact Me</h2><hr>
+               </div>
+
+               <!--  Formatting the name address-->
+               <div class="form-group">
+                    <label for="exampleFormControlInput1">Name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
+               </div>
+
+
+               <!--  Formatting the e-mail address-->
+               <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+               </div>
+
+
+
+
+
+               <div class="form-group">
+               <label for="exampleFormControlSelect2">Example multiple select</label>
+               <select multiple class="form-control" id="exampleFormControlSelect2">
+               <option>1</option>
+               <option>2</option>
+               <option>3</option>
+               <option>4</option>
+               <option>5</option>
+               </select>
+               </div>
+               <div class="form-group">
+               <label for="exampleFormControlTextarea1">Example textarea</label>
+               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+               </div>
+          </form>     
+
+
+
+
+
+
+     </div>  <!-- Wrapper to the contact form-->
+
+
+<!--************************************************************************-->
     <!-- Formating the footer.  Will make it 'fixed', similar to sticky in CSS  -->
     <!--************************************************************************-->
     
