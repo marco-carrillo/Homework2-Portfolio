@@ -7,5 +7,5 @@
 /*********************************************************/
 
 .bg-info {color=background-color:#4aaaa5};
-.navbar-brand .bg-info .text-white #myname a {font-size: 40px;}
-a#myname.navbar-brand.bg-info.text-white {font-size:30px;}
+.navbar-brand .bg-info .text-white #myname a {font-size: 40px;} 
+a#myname.navbar-brand.bg-info.text-white {font-size:30px;} 

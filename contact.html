@@ -20,7 +20,6 @@
               <!--Navbar brand, my name included here-->
               <div class="navbar-header h1">
                    <a class="navbar-brand bg-info text-white" id="myname" href="#" >Marco Carrillo</a>
-
                </div>
 
               <!--Toggle button, handles mobile screens-->
@@ -29,7 +28,6 @@
               </button>
               
                <div class="collapse navbar-collapse ml-auto" id="MyMenuHwrk2">
-
                    <!-- Navbar menu-->
                    <ul class="nav navbar-nav ml-auto">
                        <li class="nav-item"><a href="index.html" class="nav-link Active border-right">About<span class="sr-only">(current)</span></a></li>
@@ -42,11 +40,11 @@
           <hr>
      </div>  <!-- Wrapper to the navigational bar-->
 
-     <!--************************************************************************************************-->
+    <!--************************************************************************************************-->
     <!--  Defining the elements for a grid.  Only 1 row required, 3 columns, both at the end empty      -->
     <!--************************************************************************************************-->
 
-    <div id="contactformwrapper" class="container bg-white">  <!--To wrap the contact form around-->
+    <div class="container bg-white mb-5" id="formwrapper">  <!--To wrap the contact form around-->
 
           <form>  <!--Start of the input form-->
 
@@ -56,44 +54,43 @@
 
                <!--  Formatting the name address-->
                <div class="form-group">
-                    <label for="exampleFormControlInput1">Name</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
+                    <label for="contact-name">Name</label>
+                    <input type="text" class="form-control" id="contact-name" placeholder="John Smith">
                </div>
-
 
                <!--  Formatting the e-mail address-->
                <div class="form-group">
-                    <label for="exampleFormControlInput1">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+                    <label for="contact-email">Email address</label>
+                    <input type="email" class="form-control" id="contact-email" placeholder="john.smith@gmail.com">
                </div>
 
-
-
-
-
+               <!-- this will be used for an optional form (not in the original requirement but, what the heck, looks cool..... -->
                <div class="form-group">
-               <label for="exampleFormControlSelect2">Example multiple select</label>
-               <select multiple class="form-control" id="exampleFormControlSelect2">
-               <option>1</option>
-               <option>2</option>
-               <option>3</option>
-               <option>4</option>
-               <option>5</option>
-               </select>
+                    <label for="reason-for-contact">Please tell us about this query</label>
+                    <select multiple class="form-control" id="reason-for-contact">
+                    <option>Request information about company's products</option>
+                    <option>All media inquiries regarding company's products</option>
+                    <option>Interested in becoming a company's distributor</option>
+                    <option>All other</option>
+                    </select>                    
                </div>
+
+               <!-- This one is for the message text that the user wants to send-->
                <div class="form-group">
-               <label for="exampleFormControlTextarea1">Example textarea</label>
-               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="contact-message">Enter message</label>
+                    <textarea class="form-control" id="contact-message" rows="4"></textarea>
+               </div>
+
+               <!-- This container is for the last one (a surreptitios radio button, again
+                    Not in the requirement but it looks sleek and cool-->
+               <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="like-website" value="likesite">
+                    <label for="like-website">Do you like the webpage?</label>
+
                </div>
           </form>     
 
-
-
-
-
-
      </div>  <!-- Wrapper to the contact form-->
-
 
 <!--************************************************************************-->
     <!-- Formating the footer.  Will make it 'fixed', similar to sticky in CSS  -->
