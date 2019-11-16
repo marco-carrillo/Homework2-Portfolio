@@ -2,8 +2,9 @@
 <html lang=en>
 
 <head>
+     <title>Marco Carrillo(c) Website</title>
      <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
      <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -15,105 +16,112 @@
     <!--  Formatting navigational bar   -->
     <!--********************************-->
     
-    <div class="container-fluid bg-info pt-3 pb-3">  <!--To wrap the navigational bar around a teal background-->
-     <div class="container bg-white"> <!-- to align center the  navigational bar-->
-         <nav class="navbar navbar-expand-lg navbar-light bg-white">    <!-- expands when it is a middle-sized monitor-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-info text-white border-bottom">    <!-- expands when it is a middle-sized monitor-->
 
-              <!--Navbar brand, my name included here-->
-              <div class="navbar-header h1">
-                   <a class="navbar-brand 1bg-info 1text-white text-info" id="myname" href="#" >Marco Carrillo</a>
+     <!--Navbar brand, my name included here-->
+     <div class="navbar-header">
+          <a id="my-name" class="navbar-brand text-white " href="#" >Marco Carrillo</a>
+      </div>
 
-               </div>
+     <!--Toggle button, handles mobile screens-->
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MyMenuHwrk2" aria-controls="MyMenuHwrk2" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+     </button>
+     
+      <div class="collapse navbar-collapse ml-auto" id="MyMenuHwrk2">
+          <!-- Navbar menu-->
+          <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item"><a href="index.html" id="menuoption1" class="nav-link Active text-white border-right">About<span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a href="portfolio.html" id="menuoption2" class="nav-link text-white border-right">Portfolio</a></li>
+              <li class="nav-item"><a href="contact_me.html" class="nav-link text-white">Contact</a></li>
+          </ul>
+     </div>  <!--Navbar collapse-->
 
-              <!--Toggle button, handles mobile screens-->
-              <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#MyMenuHwrk2" aria-controls="MyMenuHwrk2" aria-expanded="false" aria-label="Toggle navigation">
-                   <span class="navbar-toggler-icon"></span>
-              </button>
-              
-               <div class="collapse navbar-collapse ml-auto" id="MyMenuHwrk2">
-                   <!-- Navbar menu-->
-                   <ul class="nav navbar-nav ml-auto">
-                       <li class="nav-item"><a href="index.html" id="menuoption1" class="nav-link Active border-right">About<span class="sr-only">(current)</span></a></li>
-                       <li class="nav-item"><a href="portfolio.html" id="menuoption2" class="nav-link border-right">Portfolio</a></li>
-                       <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                   </ul>
-              </div>  <!--Navbar collapse-->
-
-          </nav>  <!-- Overall nav element-->
-          </div>
-     </div>  <!-- Wrapper to the navigational bar-->
+ </nav>  <!-- Overall nav element-->
 
      <!--************************************************************************************************-->
-    <!--  Defining the elements for a grid.  Only 1 row required, 3 columns, both at the end empty      -->
-    <!--************************************************************************************************-->
+     <!--  Defining the grid for the portfolio.  There will be four rows, the first one is for the tile  -->
+     <!--  The other three will contain the six pictures (two in each row)                               -->
+     <!--************************************************************************************************-->
 
-    <div class="container bg-white pb-4 ml=4">   <!--main wrapper to have more control on the formatting-->
+    <div class="container bg-white mb-5 mt-3 pb-4 ml=4">   <!--main wrapper to have more control on the formatting-->
 
-          <div class="row border-bottom">  <!-- Top row, contains only the title "Portfolio", underlines whole area-->
-               <div clas="col-sm-12 text-info">
-                    <h2 class="text-info ">Portfolio</h2>
+          <div class="row border-bottom ml-5">  <!-- Top row, contains only the title "Portfolio", underlines whole area-->
+               <div class="col-sm-12 text-info">
+                    <h2 class="text-info mt-5">Portfolio</h2>
                </div>
           </div>   <!-- First row-->
 
-          <div class="row mt-3 mb-3">
-               <div class="col-4">  <!-- No need to collapse since it is the first-->
-                    <img src="assets/images/hangman.jpg" width=280px>
+          <div class="row mt-3 mx-3">   <!--second row-->
+               <div class="col"></div>
+               <div class="col-sm-5 mx-2 my-2">  <!-- No need to collapse since it is the first-->
+                    <img src="assets/images/hangman.jpg" class="img-responsive portfolio-pic" width=100%>
+                    <div class="text-over-image">Hangman</div>
                </div>
 
-               <div class="col-lg-4">
-                    <img src="assets/images/RPG-Game.jpg" width=280px>
+               <div class="col-sm-5 mx-2 my-2">
+                    <img src="assets/images/RPG-Game.jpg" class="img-responsive portfolio-pic" width=100%>
+                    <div class="text-over-image">RPG Game</div>
                </div>
+               <div class="col"></div>
+          </div>  <!--second row-->
 
-               <div class="col-sm-4">
-                         <img src="assets/images/Trivia-game.jpg" width=280px>
+          <div class="row mb-3 mx-3">  <!--third row-->
+                    <div class="col"></div>
+                    <div class="col-sm-5 mx-2 my-2">
+                              <img src="assets/images/Trivia-game.jpg" class="img-responsive  portfolio-pic portfolio-pic" width=100%>
+                              <div class="text-over-image">Trivia Game</div>
+                     </div>
+
+                     <div class="col-sm-5 mx-2 my-2">  <!-- No need to collapse since it is the first-->
+                         <img src="assets/images/Rock-Paper-Scissors.jpg" class="img-responsive  portfolio-pic portfolio-pic" width=100%>
+                         <div class="text-over-image">Rock-Paper-Scissors</div>
                     </div>
-                    
-          </div>  <!-- second row-->
+                    <div class="col"></div>
+     
+          </div>  <!-- third row-->
 
-
-          <div class=row mt-3 mb-5>
-                    <div class="col-4">  <!-- No need to collapse since it is the first-->
-                         <img src="assets/images/Rock-Paper-Scissors.jpg" width=280px>
+          <div class="row mb-3 mb-3 mx-3">  <!-- fourth row-->
+                    <div class="col"></div>
+                    <div class="col-sm-5 mx-2 my-2">
+                         <img src="assets/images/RutgersInfoWidget.jpg" class="img-responsive  portfolio-pic" width=100%>
+                         <div class="text-over-image">Rutgers Info Widget</div>
                     </div>
      
-                    <div class="col-lg-4">
-                         <img src="assets/images/RutgersInfoWidget.jpg" width=280px>
+                    <div class="col-sm-5 mx-2 my-2">
+                         <img src="assets/images/yieldcurve.png" class="img-responsive  portfolio-pic" width=100%>
+                         <div class="text-over-image">Yield Curve calculator</div>
                     </div>
-     
-                    <div class="col-sm-4">
-                              <img src="assets/images/yieldcurve.png" width=280px>
-                         </div>
+                    <div class="col"></div>
                              
-          </div>
-    </div>   <!--Main wrapper-->
+          </div>   <!-- fourth row-->
 
+     </div>   <!--Main wrapper-->
 
 
     <!--************************************************************************-->
     <!-- Formating the footer.  Will make it 'fixed', similar to sticky in CSS  -->
     <!--************************************************************************-->
     
-    <footer class="fixed-bottom bg-info text-light d-flex justify-content-center">
-     <p>Copyright (c) - Marco Carrillo</p>
-</footer>
+    <footer class="fixed-bottom border-top bg-info text-light d-flex justify-content-center">
+          <p>Copyright (c) - Marco Carrillo</p>
+     </footer>
+     
+    <!--******************************************************-->
+    <!-- Downloading JQuery to enable menu responsive design  -->
+    <!--******************************************************-->
 
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-<!--******************************************************-->
-<!-- Downloading JQuery to enable menu responsive design  -->
-<!--******************************************************-->
+     <!--****************************************************************************-->
+     <!-- Setting some values depending on screen width - smaller than large screen  -->
+     <!-- which is the toggle version for this design                                -->
+     <!--****************************************************************************-->
 
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-<!--****************************************************************************-->
-<!-- Setting some values depending on screen width - smaller than large screen  -->
-<!-- which is the toggle version for this design                                -->
-<!--****************************************************************************-->
-
-<script src="assets/js/format_screen.js"></script>  
+     <script src="assets/js/events.js"></script>  
 
 </body>
-
+      
 </html>

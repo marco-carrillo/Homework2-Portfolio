@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+     <title>Marco Carrillo(c) Website</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body style="background-image: url(assets/images/little_pluses.png);">
+
+     
+    <!--********************************-->
+    <!--  Formatting navigational bar   -->
+    <!--********************************-->
+    
+    <nav class="navbar navbar-expand-sm navbar-dark bg-info text-white border-bottom">    <!-- expands when it is a middle-sized monitor-->
+
+          <!--Navbar brand, my name included here-->
+          <div class="navbar-header">
+               <a id="my-name" class="navbar-brand text-white " href="#" >Marco Carrillo</a>
+          </div>
+
+          <!--Toggle button, handles mobile screens-->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MyMenuHwrk2" aria-controls="MyMenuHwrk2" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse ml-auto" id="MyMenuHwrk2">
+               <!-- Navbar menu-->
+               <ul class="nav navbar-nav ml-auto">
+               <li class="nav-item"><a href="index.html" id="menuoption1" class="nav-link Active text-white border-right">About<span class="sr-only">(current)</span></a></li>
+               <li class="nav-item"><a href="portfolio.html" id="menuoption2" class="nav-link text-white border-right">Portfolio</a></li>
+               <li class="nav-item"><a href="contact_me.html" class="nav-link text-white">Contact</a></li>
+               </ul>
+          </div>  <!--Navbar collapse-->
+
+     </nav>  <!-- Overall nav element-->
+
+    <!--************************************************************************************************-->
+    <!--  TNo grid required here.  Only a form wrapped by a standard bootstrap container                -->
+    <!--************************************************************************************************-->
+
+    <div class="container mb-5 mt-3">   
+ 
+            <form class="pt-5 px-5 bg-white">  <!--Start of the input form-->
+
+                 <div class="container text-info">  <!-- divider contains the -->
+                      <h3 class="text-info">Contact Me</h3><hr>
+                 </div>
+  
+                 <!--  Formatting the name address-->
+                 <div class="form-group">
+                      <label for="contact-name">Name</label>
+                      <input type="text" class="form-control" id="contact-name" placeholder="John Smith">
+                 </div>
+  
+                 <!--  Formatting the e-mail address-->
+                 <div class="form-group">
+                      <label for="contact-email">Email address</label>
+                      <input type="email" class="form-control" id="contact-email" placeholder="john.smith@gmail.com">
+                 </div>
+  
+                 <!-- this will be used for an optional form (not in the original requirement but, what the heck, looks cool..... -->
+                 <div class="form-group">
+                      <label for="reason-for-contact">Please tell us about this query</label>
+                      <select multiple class="form-control" id="reason-for-contact">
+                      <option selected>Request information about products</option>
+                      <option>All media/investor inquiries</option>
+                      <option>Franchising and/or distribution</option>
+                      <option>All other</option>
+                      </select>                    
+                 </div>
+  
+                 <!-- This one is for the message text that the user wants to send-->
+                 <div class="form-group">
+                      <label for="contact-message">Enter message</label>
+                      <textarea class="form-control" id="contact-message" rows="4"></textarea>
+                 </div>
+  
+                 <!-- This container is for the last radio button, again
+                      Not in the requirement but it looks sleek and cool-->
+                 <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="checkbox" checked="checked" id="like-website" value="likesite">
+                      <label for="like-website">Please add me to your mailing list</label>
+                 </div>
+  
+                 <!-- Buttom to submit the information-->
+                 <div class="form-group mt-3 pb-3">
+                      <button type="submit" id="sbmt-msg" class="btn btn-info">Submit</button>
+                 </div>
+            </form>     
+  </div>
+
+    <!--************************************************************************-->
+    <!-- Formating the footer.  Will make it 'fixed', similar to sticky in CSS  -->
+    <!--************************************************************************-->
+    
+    <footer class="fixed-bottom border-top bg-info text-light d-flex justify-content-center">
+          <p>Copyright (c) - Marco Carrillo</p>
+     </footer>
+     
+     
+    <!--******************************************************-->
+    <!-- Downloading JQuery to enable menu responsive design  -->
+    <!--******************************************************-->
+
+     
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+     <!--****************************************************************************-->
+     <!-- Setting some values depending on screen width - smaller than large screen  -->
+     <!-- which is the toggle version for this design                                -->
+     <!--****************************************************************************-->
+
+     <script src="assets/js/events.js"></script>  
+
+</body>
+
+</html>

@@ -20,17 +20,39 @@ console.log("First evaluation when it runs, width:  "+width)
 // the browse is open originally with a device with less than 992 pixesl
 //*********************************************************************/
 
-if (width<992) $("#menuoption1,#menuoption2").attr("class","nav-link");
+if (width<992) $("#menuoption1,#menuoption2").attr("class","nav-link text-white");
 
 //*********************************************************************/
-// Refresh on resizing of the screen
+// Refresh on resizing of the screen.  This function will be called
+// dynamically everytime the screen is resized.  Logging to the 
+// consol for debugging purposes.
 //*********************************************************************/
 
 $(window).resize(function() {
     var width = $(window).width();
     console.log("This is a resize event, width:  "+width) 
     
-    if   (width<992) $("#menuoption1,#menuoption2").attr("class","nav-link");
-    else $("#menuoption1,#menuoption2").attr("class","nav-link border-right")
+    if   (width<992) $("#menuoption1,#menuoption2").attr("class","nav-link text-white");
+    else $("#menuoption1,#menuoption2").attr("class","nav-link text-white border-right")
     
+});
+
+//****************************************************************************/
+// This function will provide an alert when a portfolio picture is selected */
+//****************************************************************************/
+
+$(".img-responsive.portfolio-pic").click(function(){
+    alert("This site is in construction")
+});
+
+//****************************************************************************/
+// This function will provide an alert when the user submits message         */
+//****************************************************************************/
+
+$("#sbmt-msg").click(function(){
+
+    if (document.getElementById("contact-message").value.length<10) {
+        alert("Your message is too short to be sent.");
+    }
+    else {alert("Thank you for contacting us.  We will be in touch shortly")}
 });
